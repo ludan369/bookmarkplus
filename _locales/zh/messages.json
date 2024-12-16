@@ -1,0 +1,71 @@
+{
+  "appName": {
+    "message": "Bookmark Plus"
+  },
+  "appDesc": {
+    "message": "Chrome 书签管理器"
+  },
+  "myBookmarks": {
+    "message": "我的书签"
+  },
+  "searchPlaceholder": {
+    "message": "搜索书签..."
+  },
+  "searchAllPlaceholder": {
+    "message": "搜索所有书签..."
+  },
+  "welcomeTitle": {
+    "message": "欢迎使用Bookmark Plus！"
+  },
+  "welcomeSubtext": {
+    "message": "搜索所有书签"
+  },
+  "sortDefault": {
+    "message": "默认排序"
+  },
+  "sortMostVisited": {
+    "message": "最常访问"
+  },
+  "sortByDomain": {
+    "message": "按域名"
+  },
+  "sortByTitle": {
+    "message": "按标题"
+  },
+  "sortByDate": {
+    "message": "最近添加"
+  },
+  "editBookmark": {
+    "message": "编辑书签"
+  },
+  "deleteConfirm": {
+    "message": "确定要删除这个书签吗？"
+  },
+  "title": {
+    "message": "标题"
+  },
+  "url": {
+    "message": "网址"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "importConfirm": {
+    "message": "确定要导入这些书签吗？"
+  },
+  "importError": {
+    "message": "导入书签时出错。请检查文件格式。"
+  },
+  "importSuccess": {
+    "message": "书签导入成功！"
+  },
+  "exportButton": {
+    "message": "导出"
+  },
+  "importButton": {
+    "message": "导入"
+  }
+} 

@@ -1,0 +1,71 @@
+{
+  "appName": {
+    "message": "Bookmark Plus"
+  },
+  "appDesc": {
+    "message": "A powerful Chrome bookmark manager"
+  },
+  "myBookmarks": {
+    "message": "My Bookmarks"
+  },
+  "searchPlaceholder": {
+    "message": "Search your bookmarks..."
+  },
+  "searchAllPlaceholder": {
+    "message": "Search all bookmarks..."
+  },
+  "welcomeTitle": {
+    "message": "Welcome to Bookmark Plus!"
+  },
+  "welcomeSubtext": {
+    "message": "Search across all your bookmarks"
+  },
+  "sortDefault": {
+    "message": "Default"
+  },
+  "sortMostVisited": {
+    "message": "Most Visited"
+  },
+  "sortByDomain": {
+    "message": "By Domain"
+  },
+  "sortByTitle": {
+    "message": "By Title"
+  },
+  "sortByDate": {
+    "message": "Recently Added"
+  },
+  "editBookmark": {
+    "message": "Edit Bookmark"
+  },
+  "deleteConfirm": {
+    "message": "Are you sure you want to delete this bookmark?"
+  },
+  "title": {
+    "message": "Title"
+  },
+  "url": {
+    "message": "URL"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "importConfirm": {
+    "message": "Are you sure you want to import these bookmarks?"
+  },
+  "importError": {
+    "message": "Error importing bookmarks. Please check the file format."
+  },
+  "importSuccess": {
+    "message": "Bookmarks imported successfully!"
+  },
+  "exportButton": {
+    "message": "Export"
+  },
+  "importButton": {
+    "message": "Import"
+  }
+} 

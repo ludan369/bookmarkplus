@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="sidebar">
+    <div class="sidebar-header">
+      <div class="emoji">📚</div>
+      <h2 id="bookmarks-title"></h2>
+    </div>
+    <div class="folder-list-container">
+        <ul id="folder-list"></ul>
+    </div>
+    <div class="sidebar-footer">
+        <div class="sidebar-actions">
+            <button id="export-btn" class="action-btn">
+                <span class="action-icon">📤</span>
+                <span class="action-text" id="export-text"></span>
+            </button>
+            <button id="import-btn" class="action-btn">
+                <span class="action-icon">📥</span>
+                <span class="action-text" id="import-text"></span>
+            </button>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">
+            <span class="theme-icon">🌞</span>
+        </button>
+    </div>
+  </div>
+  <div id="main-content">
+    <div id="search-container">
+      <div class="search-box">
+        <input type="text" id="search-bar" placeholder="">
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="sort-options">
+        <div class="custom-select">
+            <div class="select-selected" id="sort-select-display">
+                <span class="option-icon">📊</span><span id="sort-default"></span>
+            </div>
+            <div class="select-items select-hide">
+                <div data-value="default"><span class="option-icon">📊</span>Default</div>
+                <div data-value="frequency"><span class="option-icon">🔥</span>Most Visited</div>
+                <div data-value="domain"><span class="option-icon">🌐</span>By Domain</div>
+                <div data-value="title"><span class="option-icon">📑</span>By Title</div>
+                <div data-value="date"><span class="option-icon">🕒</span>Recently Added</div>
+            </div>
+        </div>
+        <select id="sort-select" style="display: none;">
+            <option value="default">Default</option>
+            <option value="frequency">Most Visited</option>
+            <option value="domain">By Domain</option>
+            <option value="title">By Title</option>
+            <option value="date">Recently Added</option>
+        </select>
+      </div>
+    </div>
+    <div id="bookmarks-container">
+      <ul id="bookmark-list" class="sortable-list"></ul>
+    </div>
+    <button id="back-to-top" class="back-to-top-btn">🚀</button>
+  </div>
+  <!-- 弹窗 -->
+  <div id="tag-modal" class="modal">
+    <div class="modal-content">
+      <h3>Add Tags</h3>
+      <div class="tag-input-container">
+        <input type="text" id="tag-input" placeholder="Add new tag..." />
+        <button id="add-tag-btn">Add</button>
+      </div>
+      <div id="existing-tags">
+      </div>
+      <div class="modal-buttons">
+        <button id="save-tags-btn">Save</button>
+        <button id="close-modal-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <div id="edit-modal" class="edit-modal">
+    <div class="edit-modal-content">
+        <h3>Edit Bookmark</h3>
+        <div class="edit-form-group">
+            <label for="edit-title">Title</label>
+            <input type="text" id="edit-title" placeholder="Enter title">
+        </div>
+        <div class="edit-form-group">
+            <label for="edit-url">URL</label>
+            <input type="text" id="edit-url" placeholder="Enter URL">
+        </div>
+        <div class="edit-modal-buttons">
+            <button id="save-edit-btn">Save</button>
+            <button id="cancel-edit-btn">Cancel</button>
+        </div>
+    </div>
+  </div>
+  <div class="welcome-toast">
+    <span class="welcome-emoji">✨</span>
+    <div class="welcome-content">
+        <div class="welcome-text"></div>
+        <div class="welcome-subtext"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+  <input type="file" id="import-file" accept=".json" style="display: none;">
+</body>
+</html>
